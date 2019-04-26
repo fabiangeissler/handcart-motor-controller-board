@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L bollerwagen-symbols:TPS560430 U?
+L project-symbols:TPS560430 U?
 U 1 1 5CF0A415
 P 5300 2800
 AR Path="/5CF0A415" Ref="U?"  Part="1" 
@@ -198,7 +198,7 @@ Wire Wire Line
 	7350 2700 7350 2800
 Connection ~ 7350 2800
 $Comp
-L bollerwagen-symbols:TPS560430 U?
+L project-symbols:TPS560430 U?
 U 1 1 5CF0A478
 P 5800 4850
 AR Path="/5CF0A478" Ref="U?"  Part="1" 

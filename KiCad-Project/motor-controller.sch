@@ -146,4 +146,6 @@ Wire Wire Line
 	7850 3400 7850 3350
 Wire Wire Line
 	7850 3350 8050 3350
+Text Notes 7700 3600 0    50   ~ 0
+Keep mortor wiring short to reduce EM disturbance!
 $EndSCHEMATC

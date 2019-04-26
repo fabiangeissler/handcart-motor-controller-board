@@ -40,7 +40,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/DMTH6002LPS.pdf" H 4650 3800 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L bollerwagen-symbols:MIC4102 U?
+L project-symbols:MIC4102 U?
 U 1 1 5CF168FC
 P 2250 3900
 AR Path="/5CF168FC" Ref="U?"  Part="1" 
@@ -198,7 +198,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/DMTH6002LPS.pdf" H 4650 6100 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L bollerwagen-symbols:MIC4102 U?
+L project-symbols:MIC4102 U?
 U 1 1 5CF16961
 P 2250 6200
 AR Path="/5CF16961" Ref="U?"  Part="1" 
