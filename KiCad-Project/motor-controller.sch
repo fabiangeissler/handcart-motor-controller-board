@@ -1,0 +1,149 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title "1500W (24V, 60A) Motor Drive"
+Date "2019-04-26"
+Rev ""
+Comp "Fabian Geißler"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x02 J102
+U 1 1 5CC216E6
+P 3850 5000
+F 0 "J102" H 3770 5217 50  0000 C CNN
+F 1 "Supply" H 3770 5126 50  0000 C CNN
+F 2 "" H 3850 5000 50  0001 C CNN
+F 3 "~" H 3850 5000 50  0001 C CNN
+	1    3850 5000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5100 4150 5100
+$Comp
+L power:GND #PWR0102
+U 1 1 5CC24488
+P 4150 5200
+F 0 "#PWR0102" H 4150 4950 50  0001 C CNN
+F 1 "GND" H 4155 5027 50  0000 C CNN
+F 2 "" H 4150 5200 50  0001 C CNN
+F 3 "" H 4150 5200 50  0001 C CNN
+	1    4150 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5200 4150 5100
+$Comp
+L power:+24V #PWR0101
+U 1 1 5CC24CA1
+P 4150 4900
+F 0 "#PWR0101" H 4150 4750 50  0001 C CNN
+F 1 "+24V" H 4165 5073 50  0000 C CNN
+F 2 "" H 4150 4900 50  0001 C CNN
+F 3 "" H 4150 4900 50  0001 C CNN
+	1    4150 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5000 4150 5000
+Wire Wire Line
+	4150 5000 4150 4900
+$Sheet
+S 4450 3000 1200 1000
+U 5CEDC1EA
+F0 "Controller" 50
+F1 "controller.sch" 50
+F2 "PWM" O R 5650 3400 50 
+F3 "~PWM" O R 5650 3600 50 
+F4 "BR_EN" O R 5650 3800 50 
+F5 "BUS_A" B L 4450 3200 50 
+F6 "BUS_B" B L 4450 3400 50 
+F7 "BR_CURRENT" I R 5650 3200 50 
+$EndSheet
+$Sheet
+S 6450 4200 1200 400 
+U 5CEFA277
+F0 "DC/DC Converter" 50
+F1 "dcdc_converter.sch" 50
+F2 "BR_EN" I L 6450 4400 50 
+$EndSheet
+$Sheet
+S 6450 3000 1200 1000
+U 5CF15E95
+F0 "Mosfet Bridge" 50
+F1 "bridge.sch" 50
+F2 "BR_CURRENT" O L 6450 3200 50 
+F3 "BR_OUT" O R 7650 3200 50 
+F4 "~BR_OUT" O R 7650 3400 50 
+F5 "PWM" I L 6450 3400 50 
+F6 "~PWM" I L 6450 3600 50 
+F7 "BR_EN" I L 6450 3800 50 
+$EndSheet
+Wire Wire Line
+	5650 3200 6450 3200
+Wire Wire Line
+	5650 3400 6450 3400
+Wire Wire Line
+	6450 3600 5650 3600
+Wire Wire Line
+	5650 3800 6250 3800
+Wire Wire Line
+	6450 4400 6250 4400
+Wire Wire Line
+	6250 4400 6250 3800
+Connection ~ 6250 3800
+Wire Wire Line
+	6250 3800 6450 3800
+$Comp
+L Connector:Conn_01x02_Male J101
+U 1 1 5CF4658B
+P 3650 3250
+F 0 "J101" H 3756 3428 50  0000 C CNN
+F 1 "Bus" H 3756 3337 50  0000 C CNN
+F 2 "" H 3650 3250 50  0001 C CNN
+F 3 "~" H 3650 3250 50  0001 C CNN
+	1    3650 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3250 4150 3250
+Wire Wire Line
+	4150 3250 4150 3200
+Wire Wire Line
+	4150 3200 4450 3200
+Wire Wire Line
+	3850 3350 4150 3350
+Wire Wire Line
+	4150 3350 4150 3400
+Wire Wire Line
+	4150 3400 4450 3400
+$Comp
+L Connector:Screw_Terminal_01x02 J103
+U 1 1 5CF46A3D
+P 8250 3250
+F 0 "J103" H 8330 3242 50  0000 L CNN
+F 1 "Motor" H 8330 3151 50  0000 L CNN
+F 2 "" H 8250 3250 50  0001 C CNN
+F 3 "~" H 8250 3250 50  0001 C CNN
+	1    8250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 3250 7850 3250
+Wire Wire Line
+	7850 3250 7850 3200
+Wire Wire Line
+	7850 3200 7650 3200
+Wire Wire Line
+	7650 3400 7850 3400
+Wire Wire Line
+	7850 3400 7850 3350
+Wire Wire Line
+	7850 3350 8050 3350
+$EndSCHEMATC

@@ -1,0 +1,478 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title "1500W (24V, 60A) Motor Drive"
+Date "2019-04-26"
+Rev ""
+Comp "Fabian Geißler"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L bollerwagen-symbols:TPS560430 U?
+U 1 1 5CF0A415
+P 5300 2800
+AR Path="/5CF0A415" Ref="U?"  Part="1" 
+AR Path="/5CEFA277/5CF0A415" Ref="U301"  Part="1" 
+F 0 "U301" H 5300 3465 50  0000 C CNN
+F 1 "TPS560430Y" H 5300 3374 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4650 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps560430.pdf" H 4650 3100 50  0001 C CNN
+	1    5300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CF0A41C
+P 5750 2600
+AR Path="/5CF0A41C" Ref="C?"  Part="1" 
+AR Path="/5CEFA277/5CF0A41C" Ref="C304"  Part="1" 
+F 0 "C304" H 5865 2646 50  0000 L CNN
+F 1 "100n/C0G" H 5865 2555 50  0000 L CNN
+F 2 "" H 5788 2450 50  0001 C CNN
+F 3 "~" H 5750 2600 50  0001 C CNN
+	1    5750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CF0A423
+P 6800 3000
+AR Path="/5CF0A423" Ref="R?"  Part="1" 
+AR Path="/5CEFA277/5CF0A423" Ref="R302"  Part="1" 
+F 0 "R302" H 6870 3046 50  0000 L CNN
+F 1 "62k" H 6870 2955 50  0000 L CNN
+F 2 "" V 6730 3000 50  0001 C CNN
+F 3 "~" H 6800 3000 50  0001 C CNN
+	1    6800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CF0A42A
+P 6800 3400
+AR Path="/5CF0A42A" Ref="R?"  Part="1" 
+AR Path="/5CEFA277/5CF0A42A" Ref="R303"  Part="1" 
+F 0 "R303" H 6870 3446 50  0000 L CNN
+F 1 "27k" H 6870 3355 50  0000 L CNN
+F 2 "" V 6730 3400 50  0001 C CNN
+F 3 "~" H 6800 3400 50  0001 C CNN
+	1    6800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5CF0A431
+P 6550 2800
+AR Path="/5CF0A431" Ref="L?"  Part="1" 
+AR Path="/5CEFA277/5CF0A431" Ref="L301"  Part="1" 
+F 0 "L301" V 6740 2800 50  0000 C CNN
+F 1 "NR3010T220M" V 6649 2800 50  0000 C CNN
+F 2 "" H 6550 2800 50  0001 C CNN
+F 3 "~" H 6550 2800 50  0001 C CNN
+	1    6550 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CF0A438
+P 7350 3200
+AR Path="/5CF0A438" Ref="C?"  Part="1" 
+AR Path="/5CEFA277/5CF0A438" Ref="C306"  Part="1" 
+F 0 "C306" H 7465 3246 50  0000 L CNN
+F 1 "22u/25V" H 7465 3155 50  0000 L CNN
+F 2 "" H 7388 3050 50  0001 C CNN
+F 3 "~" H 7350 3200 50  0001 C CNN
+	1    7350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2800 5750 2800
+Wire Wire Line
+	5750 2800 5750 2750
+Wire Wire Line
+	5750 2800 6400 2800
+Connection ~ 5750 2800
+Wire Wire Line
+	5650 2400 5750 2400
+Wire Wire Line
+	5750 2400 5750 2450
+Wire Wire Line
+	5650 3200 6800 3200
+Wire Wire Line
+	6800 3200 6800 3150
+Wire Wire Line
+	6800 3250 6800 3200
+Connection ~ 6800 3200
+Wire Wire Line
+	6700 2800 6800 2800
+Wire Wire Line
+	6800 2800 6800 2850
+Wire Wire Line
+	6800 2800 7350 2800
+Wire Wire Line
+	7350 2800 7350 3050
+Connection ~ 6800 2800
+Wire Wire Line
+	4950 3200 4850 3200
+Wire Wire Line
+	4850 3200 4850 3650
+Wire Wire Line
+	4850 3650 5300 3650
+Wire Wire Line
+	6800 3650 6800 3550
+Wire Wire Line
+	6800 3650 7350 3650
+Wire Wire Line
+	7350 3650 7350 3350
+Connection ~ 6800 3650
+Wire Wire Line
+	5300 3650 5300 3750
+Connection ~ 5300 3650
+Wire Wire Line
+	5300 3650 6800 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5CF0A458
+P 5300 3750
+AR Path="/5CF0A458" Ref="#PWR?"  Part="1" 
+AR Path="/5CEFA277/5CF0A458" Ref="#PWR0303"  Part="1" 
+F 0 "#PWR0303" H 5300 3500 50  0001 C CNN
+F 1 "GND" H 5305 3577 50  0000 C CNN
+F 2 "" H 5300 3750 50  0001 C CNN
+F 3 "" H 5300 3750 50  0001 C CNN
+	1    5300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CF0A45E
+P 4200 3000
+AR Path="/5CF0A45E" Ref="C?"  Part="1" 
+AR Path="/5CEFA277/5CF0A45E" Ref="C301"  Part="1" 
+F 0 "C301" H 4315 3046 50  0000 L CNN
+F 1 "10u/50V" H 4315 2955 50  0000 L CNN
+F 2 "" H 4238 2850 50  0001 C CNN
+F 3 "~" H 4200 3000 50  0001 C CNN
+	1    4200 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2800 4850 2800
+Wire Wire Line
+	4850 2800 4850 2400
+Wire Wire Line
+	4850 2400 4950 2400
+Wire Wire Line
+	4850 2400 4200 2400
+Wire Wire Line
+	4200 2400 4200 2850
+Connection ~ 4850 2400
+Wire Wire Line
+	4200 3150 4200 3650
+Wire Wire Line
+	4200 3650 4850 3650
+Connection ~ 4850 3650
+$Comp
+L power:+24V #PWR?
+U 1 1 5CF0A46E
+P 4200 2300
+AR Path="/5CF0A46E" Ref="#PWR?"  Part="1" 
+AR Path="/5CEFA277/5CF0A46E" Ref="#PWR0301"  Part="1" 
+F 0 "#PWR0301" H 4200 2150 50  0001 C CNN
+F 1 "+24V" H 4215 2473 50  0000 C CNN
+F 2 "" H 4200 2300 50  0001 C CNN
+F 3 "" H 4200 2300 50  0001 C CNN
+	1    4200 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2300 4200 2400
+Connection ~ 4200 2400
+Wire Wire Line
+	7350 2700 7350 2800
+Connection ~ 7350 2800
+$Comp
+L bollerwagen-symbols:TPS560430 U?
+U 1 1 5CF0A478
+P 5800 4850
+AR Path="/5CF0A478" Ref="U?"  Part="1" 
+AR Path="/5CEFA277/5CF0A478" Ref="U302"  Part="1" 
+F 0 "U302" H 5800 5515 50  0000 C CNN
+F 1 "TPS560430Y" H 5800 5424 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5150 5150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps560430.pdf" H 5150 5150 50  0001 C CNN
+	1    5800 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CF0A47F
+P 6250 4650
+AR Path="/5CF0A47F" Ref="C?"  Part="1" 
+AR Path="/5CEFA277/5CF0A47F" Ref="C305"  Part="1" 
+F 0 "C305" H 6365 4696 50  0000 L CNN
+F 1 "100n/C0G" H 6365 4605 50  0000 L CNN
+F 2 "" H 6288 4500 50  0001 C CNN
+F 3 "~" H 6250 4650 50  0001 C CNN
+	1    6250 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CF0A486
+P 7400 5050
+AR Path="/5CF0A486" Ref="R?"  Part="1" 
+AR Path="/5CEFA277/5CF0A486" Ref="R304"  Part="1" 
+F 0 "R304" H 7470 5096 50  0000 L CNN
+F 1 "330k" H 7470 5005 50  0000 L CNN
+F 2 "" V 7330 5050 50  0001 C CNN
+F 3 "~" H 7400 5050 50  0001 C CNN
+	1    7400 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CF0A48D
+P 7400 5450
+AR Path="/5CF0A48D" Ref="R?"  Part="1" 
+AR Path="/5CEFA277/5CF0A48D" Ref="R305"  Part="1" 
+F 0 "R305" H 7470 5496 50  0000 L CNN
+F 1 "30k" H 7470 5405 50  0000 L CNN
+F 2 "" V 7330 5450 50  0001 C CNN
+F 3 "~" H 7400 5450 50  0001 C CNN
+	1    7400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5CF0A494
+P 7150 4850
+AR Path="/5CF0A494" Ref="L?"  Part="1" 
+AR Path="/5CEFA277/5CF0A494" Ref="L302"  Part="1" 
+F 0 "L302" V 7340 4850 50  0000 C CNN
+F 1 "NR3010T220M" V 7249 4850 50  0000 C CNN
+F 2 "" H 7150 4850 50  0001 C CNN
+F 3 "~" H 7150 4850 50  0001 C CNN
+	1    7150 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CF0A49B
+P 7950 5250
+AR Path="/5CF0A49B" Ref="C?"  Part="1" 
+AR Path="/5CEFA277/5CF0A49B" Ref="C307"  Part="1" 
+F 0 "C307" H 8065 5296 50  0000 L CNN
+F 1 "22u/25V" H 8065 5205 50  0000 L CNN
+F 2 "" H 7988 5100 50  0001 C CNN
+F 3 "~" H 7950 5250 50  0001 C CNN
+	1    7950 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4850 6250 4850
+Wire Wire Line
+	6250 4850 6250 4800
+Wire Wire Line
+	6250 4850 7000 4850
+Connection ~ 6250 4850
+Wire Wire Line
+	6150 4450 6250 4450
+Wire Wire Line
+	6250 4450 6250 4500
+Wire Wire Line
+	6150 5250 7400 5250
+Wire Wire Line
+	7400 5250 7400 5200
+Wire Wire Line
+	7400 5300 7400 5250
+Connection ~ 7400 5250
+Wire Wire Line
+	7300 4850 7400 4850
+Wire Wire Line
+	7400 4850 7400 4900
+Wire Wire Line
+	7400 4850 7950 4850
+Wire Wire Line
+	7950 4850 7950 5100
+Connection ~ 7400 4850
+Wire Wire Line
+	5450 5250 5350 5250
+Wire Wire Line
+	5350 5250 5350 5700
+Wire Wire Line
+	5350 5700 5800 5700
+Wire Wire Line
+	7400 5700 7400 5600
+Wire Wire Line
+	7400 5700 7950 5700
+Wire Wire Line
+	7950 5700 7950 5400
+Connection ~ 7400 5700
+Wire Wire Line
+	5800 5700 5800 5800
+Connection ~ 5800 5700
+Wire Wire Line
+	5800 5700 7400 5700
+$Comp
+L power:GND #PWR?
+U 1 1 5CF0A4BB
+P 5800 5800
+AR Path="/5CF0A4BB" Ref="#PWR?"  Part="1" 
+AR Path="/5CEFA277/5CF0A4BB" Ref="#PWR0304"  Part="1" 
+F 0 "#PWR0304" H 5800 5550 50  0001 C CNN
+F 1 "GND" H 5805 5627 50  0000 C CNN
+F 2 "" H 5800 5800 50  0001 C CNN
+F 3 "" H 5800 5800 50  0001 C CNN
+	1    5800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CF0A4C1
+P 4200 5050
+AR Path="/5CF0A4C1" Ref="C?"  Part="1" 
+AR Path="/5CEFA277/5CF0A4C1" Ref="C302"  Part="1" 
+F 0 "C302" H 4315 5096 50  0000 L CNN
+F 1 "10u/50V" H 4315 5005 50  0000 L CNN
+F 2 "" H 4238 4900 50  0001 C CNN
+F 3 "~" H 4200 5050 50  0001 C CNN
+	1    4200 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4450 4200 4900
+Wire Wire Line
+	4200 5200 4200 5700
+Wire Wire Line
+	4200 5700 5350 5700
+Connection ~ 5350 5700
+$Comp
+L power:+24V #PWR?
+U 1 1 5CF0A4CC
+P 4200 4350
+AR Path="/5CF0A4CC" Ref="#PWR?"  Part="1" 
+AR Path="/5CEFA277/5CF0A4CC" Ref="#PWR0302"  Part="1" 
+F 0 "#PWR0302" H 4200 4200 50  0001 C CNN
+F 1 "+24V" H 4215 4523 50  0000 C CNN
+F 2 "" H 4200 4350 50  0001 C CNN
+F 3 "" H 4200 4350 50  0001 C CNN
+	1    4200 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4350 4200 4450
+Connection ~ 4200 4450
+Wire Wire Line
+	7950 4750 7950 4850
+Connection ~ 7950 4850
+$Comp
+L Device:C C?
+U 1 1 5CF0A4D6
+P 8600 5250
+AR Path="/5CF0A4D6" Ref="C?"  Part="1" 
+AR Path="/5CEFA277/5CF0A4D6" Ref="C308"  Part="1" 
+F 0 "C308" H 8715 5296 50  0000 L CNN
+F 1 "22u/25V" H 8715 5205 50  0000 L CNN
+F 2 "" H 8638 5100 50  0001 C CNN
+F 3 "~" H 8600 5250 50  0001 C CNN
+	1    8600 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4850 8600 4850
+Wire Wire Line
+	8600 4850 8600 5100
+Wire Wire Line
+	7950 5700 8600 5700
+Wire Wire Line
+	8600 5700 8600 5400
+Connection ~ 7950 5700
+Wire Wire Line
+	4200 4450 5450 4450
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CF0A4E3
+P 7350 2700
+AR Path="/5CF0A4E3" Ref="#PWR?"  Part="1" 
+AR Path="/5CEFA277/5CF0A4E3" Ref="#PWR0305"  Part="1" 
+F 0 "#PWR0305" H 7350 2550 50  0001 C CNN
+F 1 "+3V3" H 7365 2873 50  0000 C CNN
+F 2 "" H 7350 2700 50  0001 C CNN
+F 3 "" H 7350 2700 50  0001 C CNN
+	1    7350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CF0A4E9
+P 5350 5050
+AR Path="/5CF0A4E9" Ref="R?"  Part="1" 
+AR Path="/5CEFA277/5CF0A4E9" Ref="R301"  Part="1" 
+F 0 "R301" H 5420 5096 50  0000 L CNN
+F 1 "1M" H 5420 5005 50  0000 L CNN
+F 2 "" V 5280 5050 50  0001 C CNN
+F 3 "~" H 5350 5050 50  0001 C CNN
+	1    5350 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4900 5350 4850
+Wire Wire Line
+	5350 4850 5450 4850
+Wire Wire Line
+	5350 5250 5350 5200
+Connection ~ 5350 5250
+Connection ~ 5350 4850
+$Comp
+L Device:C C?
+U 1 1 5CF0A4F7
+P 4900 5050
+AR Path="/5CF0A4F7" Ref="C?"  Part="1" 
+AR Path="/5CEFA277/5CF0A4F7" Ref="C303"  Part="1" 
+F 0 "C303" H 5015 5096 50  0000 L CNN
+F 1 "100n" H 5015 5005 50  0000 L CNN
+F 2 "" H 4938 4900 50  0001 C CNN
+F 3 "~" H 4900 5050 50  0001 C CNN
+	1    4900 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4900 4900 4850
+Wire Wire Line
+	4900 4850 5350 4850
+Wire Wire Line
+	4900 5200 4900 5250
+Wire Wire Line
+	4900 5250 5350 5250
+Text Notes 4650 4750 0    50   ~ 0
+Bridge Driver Enable
+$Comp
+L power:+12V #PWR?
+U 1 1 5CF0A504
+P 7950 4750
+AR Path="/5CF0A504" Ref="#PWR?"  Part="1" 
+AR Path="/5CEFA277/5CF0A504" Ref="#PWR0306"  Part="1" 
+F 0 "#PWR0306" H 7950 4600 50  0001 C CNN
+F 1 "+12V" H 7965 4923 50  0000 C CNN
+F 2 "" H 7950 4750 50  0001 C CNN
+F 3 "" H 7950 4750 50  0001 C CNN
+	1    7950 4750
+	1    0    0    -1  
+$EndComp
+Text HLabel 4800 4850 0    50   Input ~ 0
+BR_EN
+Wire Wire Line
+	4800 4850 4900 4850
+Connection ~ 4900 4850
+Text Notes 8500 4800 2    50   ~ 0
+appr. 40mA
+Text Notes 7900 2750 2    50   ~ 0
+max. 10mA
+$EndSCHEMATC
