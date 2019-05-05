@@ -179,19 +179,6 @@ Wire Wire Line
 Wire Wire Line
 	4200 3650 4850 3650
 Connection ~ 4850 3650
-$Comp
-L power:+24V #PWR?
-U 1 1 5CF0A46E
-P 4200 2300
-AR Path="/5CF0A46E" Ref="#PWR?"  Part="1" 
-AR Path="/5CEFA277/5CF0A46E" Ref="#PWR0301"  Part="1" 
-F 0 "#PWR0301" H 4200 2150 50  0001 C CNN
-F 1 "+24V" H 4215 2473 50  0000 C CNN
-F 2 "" H 4200 2300 50  0001 C CNN
-F 3 "" H 4200 2300 50  0001 C CNN
-	1    4200 2300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4200 2300 4200 2400
 Connection ~ 4200 2400
@@ -213,4 +200,15 @@ F 3 "" H 7350 2700 50  0001 C CNN
 $EndComp
 Text Notes 7900 2750 2    50   ~ 0
 max. 10mA
+$Comp
+L power:+12V #PWR?
+U 1 1 5CE62B31
+P 4200 2300
+F 0 "#PWR?" H 4200 2150 50  0001 C CNN
+F 1 "+12V" H 4215 2473 50  0000 C CNN
+F 2 "" H 4200 2300 50  0001 C CNN
+F 3 "" H 4200 2300 50  0001 C CNN
+	1    4200 2300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
