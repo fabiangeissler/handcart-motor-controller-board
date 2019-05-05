@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:motor-controller-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -168,9 +169,7 @@ Wire Wire Line
 	4750 4200 4750 4100
 Connection ~ 4750 4100
 Wire Wire Line
-	1900 3400 2200 3400
-Wire Wire Line
-	1900 3200 2200 3200
+	1900 3200 2000 3200
 $Comp
 L Device:Q_NMOS_SGD Q?
 U 1 1 5CF16953
@@ -326,9 +325,7 @@ Wire Wire Line
 	4750 6500 4750 6400
 Connection ~ 4750 6400
 Wire Wire Line
-	1900 5700 2200 5700
-Wire Wire Line
-	1900 5500 2200 5500
+	1900 5500 2000 5500
 Wire Wire Line
 	4750 3500 7300 3500
 Wire Wire Line
@@ -538,17 +535,11 @@ Wire Wire Line
 	9250 2200 9250 2400
 Text Notes 8150 1700 2    50   ~ 0
 PCB trace shunt
-Text HLabel 8300 3500 2    50   Output ~ 0
-BR_OUT
-Text HLabel 8300 3600 2    50   Output ~ 0
-~BR_OUT
 Text HLabel 1900 3200 0    50   Input ~ 0
 PWM
 Text HLabel 1900 5500 0    50   Input ~ 0
 ~PWM
-Text HLabel 1900 5700 0    50   Input ~ 0
-BR_EN
-Text HLabel 1900 3400 0    50   Input ~ 0
+Text HLabel 1400 3400 0    50   Input ~ 0
 BR_EN
 $Comp
 L Device:C C?
@@ -600,4 +591,122 @@ Text Notes 7150 5400 2    50   ~ 0
  ESW108M063AM3AA
 Text Notes 7150 3100 2    50   ~ 0
  ESW108M063AM3AA
+$Comp
+L Device:R R?
+U 1 1 5CC6C599
+P 2000 3650
+AR Path="/5CC6C599" Ref="R?"  Part="1" 
+AR Path="/5CEDC1EA/5CC6C599" Ref="R?"  Part="1" 
+AR Path="/5CF15E95/5CC6C599" Ref="R?"  Part="1" 
+F 0 "R?" H 2070 3696 50  0000 L CNN
+F 1 "47k" H 2070 3605 50  0000 L CNN
+F 2 "" V 1930 3650 50  0001 C CNN
+F 3 "~" H 2000 3650 50  0001 C CNN
+	1    2000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CC6C5A0
+P 2000 5950
+AR Path="/5CC6C5A0" Ref="R?"  Part="1" 
+AR Path="/5CEDC1EA/5CC6C5A0" Ref="R?"  Part="1" 
+AR Path="/5CF15E95/5CC6C5A0" Ref="R?"  Part="1" 
+F 0 "R?" H 2070 5996 50  0000 L CNN
+F 1 "47k" H 2070 5905 50  0000 L CNN
+F 2 "" V 1930 5950 50  0001 C CNN
+F 3 "~" H 2000 5950 50  0001 C CNN
+	1    2000 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CC6C5A9
+P 2000 6300
+AR Path="/5CC6C5A9" Ref="#PWR?"  Part="1" 
+AR Path="/5CEDC1EA/5CC6C5A9" Ref="#PWR?"  Part="1" 
+AR Path="/5CF15E95/5CC6C5A9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2000 6050 50  0001 C CNN
+F 1 "GND" H 2005 6127 50  0000 C CNN
+F 2 "" H 2000 6300 50  0001 C CNN
+F 3 "" H 2000 6300 50  0001 C CNN
+	1    2000 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CC6C5AF
+P 2000 3900
+AR Path="/5CC6C5AF" Ref="#PWR?"  Part="1" 
+AR Path="/5CEDC1EA/5CC6C5AF" Ref="#PWR?"  Part="1" 
+AR Path="/5CF15E95/5CC6C5AF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2000 3650 50  0001 C CNN
+F 1 "GND" H 2005 3727 50  0000 C CNN
+F 2 "" H 2000 3900 50  0001 C CNN
+F 3 "" H 2000 3900 50  0001 C CNN
+	1    2000 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3800 2000 3900
+Wire Wire Line
+	2000 6300 2000 6200
+Wire Wire Line
+	2000 5800 2000 5500
+Connection ~ 2000 5500
+Wire Wire Line
+	2000 5500 2200 5500
+Wire Wire Line
+	2000 3500 2000 3200
+Connection ~ 2000 3200
+Wire Wire Line
+	2000 3200 2200 3200
+$Comp
+L Device:R R?
+U 1 1 5CD5880B
+P 1500 5950
+AR Path="/5CD5880B" Ref="R?"  Part="1" 
+AR Path="/5CEDC1EA/5CD5880B" Ref="R?"  Part="1" 
+AR Path="/5CF15E95/5CD5880B" Ref="R?"  Part="1" 
+F 0 "R?" H 1570 5996 50  0000 L CNN
+F 1 "47k" H 1570 5905 50  0000 L CNN
+F 2 "" V 1430 5950 50  0001 C CNN
+F 3 "~" H 1500 5950 50  0001 C CNN
+	1    1500 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5800 1500 5700
+Wire Wire Line
+	1400 3400 1500 3400
+Connection ~ 1500 5700
+Wire Wire Line
+	1500 5700 2200 5700
+Wire Wire Line
+	1500 6100 1500 6200
+Wire Wire Line
+	1500 6200 2000 6200
+Connection ~ 2000 6200
+Wire Wire Line
+	2000 6200 2000 6100
+Wire Wire Line
+	1500 5700 1500 3400
+Connection ~ 1500 3400
+Wire Wire Line
+	1500 3400 2200 3400
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5CD7A382
+P 8500 3500
+AR Path="/5CD7A382" Ref="J?"  Part="1" 
+AR Path="/5CF15E95/5CD7A382" Ref="J?"  Part="1" 
+F 0 "J?" H 8580 3492 50  0000 L CNN
+F 1 "Motor" H 8580 3401 50  0000 L CNN
+F 2 "" H 8500 3500 50  0001 C CNN
+F 3 "~" H 8500 3500 50  0001 C CNN
+	1    8500 3500
+	1    0    0    -1  
+$EndComp
+Text Notes 8350 3900 0    50   ~ 0
+Keep mortor wiring short to reduce EM disturbance!
 $EndSCHEMATC
