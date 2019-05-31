@@ -1,0 +1,317 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title "1500W (24V, 60A) Motor Drive"
+Date "2019-04-26"
+Rev ""
+Comp "Fabian Geißler"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L project-symbols:TPS560430 U?
+U 1 1 5CF0A415
+P 5300 2800
+AR Path="/5CF0A415" Ref="U?"  Part="1" 
+AR Path="/5CEFA277/5CF0A415" Ref="U301"  Part="1" 
+AR Path="/5CF0EAAE/5CF0A415" Ref="U?"  Part="1" 
+F 0 "U?" H 5300 3465 50  0000 C CNN
+F 1 "TPS560430Y" H 5300 3374 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4650 3100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps560430.pdf" H 4650 3100 50  0001 C CNN
+	1    5300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CF0A41C
+P 5750 2600
+AR Path="/5CF0A41C" Ref="C?"  Part="1" 
+AR Path="/5CEFA277/5CF0A41C" Ref="C302"  Part="1" 
+AR Path="/5CF0EAAE/5CF0A41C" Ref="C?"  Part="1" 
+F 0 "C?" H 5865 2646 50  0000 L CNN
+F 1 "100n/C0G" H 5865 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5788 2450 50  0001 C CNN
+F 3 "~" H 5750 2600 50  0001 C CNN
+	1    5750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CF0A423
+P 6800 3000
+AR Path="/5CF0A423" Ref="R?"  Part="1" 
+AR Path="/5CEFA277/5CF0A423" Ref="R301"  Part="1" 
+AR Path="/5CF0EAAE/5CF0A423" Ref="R?"  Part="1" 
+F 0 "R?" H 6870 3046 50  0000 L CNN
+F 1 "62k" H 6870 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6730 3000 50  0001 C CNN
+F 3 "~" H 6800 3000 50  0001 C CNN
+	1    6800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CF0A42A
+P 6800 3400
+AR Path="/5CF0A42A" Ref="R?"  Part="1" 
+AR Path="/5CEFA277/5CF0A42A" Ref="R302"  Part="1" 
+AR Path="/5CF0EAAE/5CF0A42A" Ref="R?"  Part="1" 
+F 0 "R?" H 6870 3446 50  0000 L CNN
+F 1 "27k" H 6870 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6730 3400 50  0001 C CNN
+F 3 "~" H 6800 3400 50  0001 C CNN
+	1    6800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5CF0A431
+P 6550 2800
+AR Path="/5CF0A431" Ref="L?"  Part="1" 
+AR Path="/5CEFA277/5CF0A431" Ref="L301"  Part="1" 
+AR Path="/5CF0EAAE/5CF0A431" Ref="L?"  Part="1" 
+F 0 "L?" V 6740 2800 50  0000 C CNN
+F 1 "NR3010T220M" V 6649 2800 50  0000 C CNN
+F 2 "Inductor_SMD:L_Taiyo-Yuden_NR-30xx" H 6550 2800 50  0001 C CNN
+F 3 "~" H 6550 2800 50  0001 C CNN
+	1    6550 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CF0A438
+P 7350 3200
+AR Path="/5CF0A438" Ref="C?"  Part="1" 
+AR Path="/5CEFA277/5CF0A438" Ref="C303"  Part="1" 
+AR Path="/5CF0EAAE/5CF0A438" Ref="C?"  Part="1" 
+F 0 "C?" H 7465 3246 50  0000 L CNN
+F 1 "22u/25V" H 7465 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7388 3050 50  0001 C CNN
+F 3 "~" H 7350 3200 50  0001 C CNN
+	1    7350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2800 5750 2800
+Wire Wire Line
+	5750 2800 5750 2750
+Wire Wire Line
+	5750 2800 6400 2800
+Connection ~ 5750 2800
+Wire Wire Line
+	5650 2400 5750 2400
+Wire Wire Line
+	5750 2400 5750 2450
+Wire Wire Line
+	5650 3200 6800 3200
+Wire Wire Line
+	6800 3200 6800 3150
+Wire Wire Line
+	6800 3250 6800 3200
+Connection ~ 6800 3200
+Wire Wire Line
+	6700 2800 6800 2800
+Wire Wire Line
+	6800 2800 6800 2850
+Wire Wire Line
+	6800 2800 7350 2800
+Wire Wire Line
+	7350 2800 7350 3050
+Connection ~ 6800 2800
+Wire Wire Line
+	4950 3200 4850 3200
+Wire Wire Line
+	4850 3200 4850 3650
+Wire Wire Line
+	4850 3650 5300 3650
+Wire Wire Line
+	6800 3650 6800 3550
+Wire Wire Line
+	6800 3650 7350 3650
+Wire Wire Line
+	7350 3650 7350 3350
+Connection ~ 6800 3650
+Wire Wire Line
+	5300 3650 5300 3750
+Connection ~ 5300 3650
+Wire Wire Line
+	5300 3650 6800 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5CF0A458
+P 5300 3750
+AR Path="/5CF0A458" Ref="#PWR?"  Part="1" 
+AR Path="/5CEFA277/5CF0A458" Ref="#PWR0302"  Part="1" 
+AR Path="/5CF0EAAE/5CF0A458" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5300 3500 50  0001 C CNN
+F 1 "GND" H 5305 3577 50  0000 C CNN
+F 2 "" H 5300 3750 50  0001 C CNN
+F 3 "" H 5300 3750 50  0001 C CNN
+	1    5300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CF0A45E
+P 4200 3000
+AR Path="/5CF0A45E" Ref="C?"  Part="1" 
+AR Path="/5CEFA277/5CF0A45E" Ref="C301"  Part="1" 
+AR Path="/5CF0EAAE/5CF0A45E" Ref="C?"  Part="1" 
+F 0 "C?" H 4315 3046 50  0000 L CNN
+F 1 "10u/50V" H 4315 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4238 2850 50  0001 C CNN
+F 3 "~" H 4200 3000 50  0001 C CNN
+	1    4200 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2800 4850 2800
+Wire Wire Line
+	4850 2800 4850 2400
+Wire Wire Line
+	4850 2400 4950 2400
+Wire Wire Line
+	4850 2400 4200 2400
+Wire Wire Line
+	4200 2400 4200 2850
+Connection ~ 4850 2400
+Wire Wire Line
+	4200 3150 4200 3650
+Wire Wire Line
+	4200 3650 4850 3650
+Connection ~ 4850 3650
+Wire Wire Line
+	4200 2300 4200 2400
+Connection ~ 4200 2400
+Wire Wire Line
+	7350 2700 7350 2800
+Connection ~ 7350 2800
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CF0A4E3
+P 7350 2700
+AR Path="/5CF0A4E3" Ref="#PWR?"  Part="1" 
+AR Path="/5CEFA277/5CF0A4E3" Ref="#PWR0303"  Part="1" 
+AR Path="/5CF0EAAE/5CF0A4E3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7350 2550 50  0001 C CNN
+F 1 "+3V3" H 7365 2873 50  0000 C CNN
+F 2 "" H 7350 2700 50  0001 C CNN
+F 3 "" H 7350 2700 50  0001 C CNN
+	1    7350 2700
+	1    0    0    -1  
+$EndComp
+Text Notes 7900 2750 2    50   ~ 0
+max. 10mA
+$Comp
+L power:+12V #PWR?
+U 1 1 5CE62B31
+P 4200 2300
+F 0 "#PWR?" H 4200 2150 50  0001 C CNN
+F 1 "+12V" H 4215 2473 50  0000 C CNN
+F 2 "" H 4200 2300 50  0001 C CNN
+F 3 "" H 4200 2300 50  0001 C CNN
+	1    4200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Reference_Voltage:TL431DBZ U?
+U 1 1 5CF0FF43
+P 5050 5550
+F 0 "U?" V 5096 5480 50  0000 R CNN
+F 1 "TL431DBZ" V 5005 5480 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5050 5400 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 5050 5550 50  0001 C CIN
+	1    5050 5550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CF0FF4A
+P 5050 4800
+F 0 "#PWR?" H 5050 4650 50  0001 C CNN
+F 1 "+3V3" H 5065 4973 50  0000 C CNN
+F 2 "" H 5050 4800 50  0001 C CNN
+F 3 "" H 5050 4800 50  0001 C CNN
+	1    5050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CF0FF50
+P 5050 5050
+F 0 "R?" H 5120 5096 50  0000 L CNN
+F 1 "1k" H 5120 5005 50  0000 L CNN
+F 2 "" V 4980 5050 50  0001 C CNN
+F 3 "~" H 5050 5050 50  0001 C CNN
+	1    5050 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CF0FF57
+P 5800 5550
+F 0 "C?" H 5915 5596 50  0000 L CNN
+F 1 "1u" H 5915 5505 50  0000 L CNN
+F 2 "" H 5838 5400 50  0001 C CNN
+F 3 "~" H 5800 5550 50  0001 C CNN
+	1    5800 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 5400 5800 5300
+Wire Wire Line
+	5800 5300 5050 5300
+Wire Wire Line
+	5050 5300 5050 5200
+Wire Wire Line
+	5050 5300 5050 5450
+Connection ~ 5050 5300
+Wire Wire Line
+	4950 5550 4850 5550
+Wire Wire Line
+	4850 5550 4850 5300
+Wire Wire Line
+	4850 5300 5050 5300
+Wire Wire Line
+	5050 5650 5050 5800
+Wire Wire Line
+	5050 5800 5800 5800
+Wire Wire Line
+	5800 5800 5800 5700
+Wire Wire Line
+	5050 4900 5050 4800
+$Comp
+L power:GND #PWR?
+U 1 1 5CF0FF6A
+P 5050 5900
+F 0 "#PWR?" H 5050 5650 50  0001 C CNN
+F 1 "GND" H 5055 5727 50  0000 C CNN
+F 2 "" H 5050 5900 50  0001 C CNN
+F 3 "" H 5050 5900 50  0001 C CNN
+	1    5050 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 5900 5050 5800
+Connection ~ 5050 5800
+$Comp
+L power:+2V5 #PWR?
+U 1 1 5CF0FF72
+P 5800 5200
+F 0 "#PWR?" H 5800 5050 50  0001 C CNN
+F 1 "+2V5" H 5815 5373 50  0000 C CNN
+F 2 "" H 5800 5200 50  0001 C CNN
+F 3 "" H 5800 5200 50  0001 C CNN
+	1    5800 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 5200 5800 5300
+Connection ~ 5800 5300
+$EndSCHEMATC
