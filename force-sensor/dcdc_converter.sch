@@ -1,4 +1,6 @@
 EESchema Schematic File Version 4
+LIBS:force-sensor-cache
+LIBS:motor-controller-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,11 +17,11 @@ Comment4 ""
 $EndDescr
 $Comp
 L project-symbols:TPS560430 U?
-U 1 1 5CF0A415
+U 1 1 5CF1ED51
 P 5300 2800
-AR Path="/5CF0A415" Ref="U?"  Part="1" 
-AR Path="/5CEFA277/5CF0A415" Ref="U301"  Part="1" 
-AR Path="/5CF0EAAE/5CF0A415" Ref="U?"  Part="1" 
+AR Path="/5CF1ED51" Ref="U?"  Part="1" 
+AR Path="/5CEFA277/5CF1ED51" Ref="U?"  Part="1" 
+AR Path="/5CF0EAAE/5CF1ED51" Ref="U?"  Part="1" 
 F 0 "U?" H 5300 3465 50  0000 C CNN
 F 1 "TPS560430Y" H 5300 3374 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4650 3100 50  0001 C CNN
@@ -32,7 +34,7 @@ L Device:C C?
 U 1 1 5CF0A41C
 P 5750 2600
 AR Path="/5CF0A41C" Ref="C?"  Part="1" 
-AR Path="/5CEFA277/5CF0A41C" Ref="C302"  Part="1" 
+AR Path="/5CEFA277/5CF0A41C" Ref="C?"  Part="1" 
 AR Path="/5CF0EAAE/5CF0A41C" Ref="C?"  Part="1" 
 F 0 "C?" H 5865 2646 50  0000 L CNN
 F 1 "100n/C0G" H 5865 2555 50  0000 L CNN
@@ -43,11 +45,11 @@ F 3 "~" H 5750 2600 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R R?
-U 1 1 5CF0A423
+U 1 1 5CF1ED53
 P 6800 3000
-AR Path="/5CF0A423" Ref="R?"  Part="1" 
-AR Path="/5CEFA277/5CF0A423" Ref="R301"  Part="1" 
-AR Path="/5CF0EAAE/5CF0A423" Ref="R?"  Part="1" 
+AR Path="/5CF1ED53" Ref="R?"  Part="1" 
+AR Path="/5CEFA277/5CF1ED53" Ref="R?"  Part="1" 
+AR Path="/5CF0EAAE/5CF1ED53" Ref="R?"  Part="1" 
 F 0 "R?" H 6870 3046 50  0000 L CNN
 F 1 "62k" H 6870 2955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 6730 3000 50  0001 C CNN
@@ -57,11 +59,11 @@ F 3 "~" H 6800 3000 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R R?
-U 1 1 5CF0A42A
+U 1 1 5CF1ED54
 P 6800 3400
-AR Path="/5CF0A42A" Ref="R?"  Part="1" 
-AR Path="/5CEFA277/5CF0A42A" Ref="R302"  Part="1" 
-AR Path="/5CF0EAAE/5CF0A42A" Ref="R?"  Part="1" 
+AR Path="/5CF1ED54" Ref="R?"  Part="1" 
+AR Path="/5CEFA277/5CF1ED54" Ref="R?"  Part="1" 
+AR Path="/5CF0EAAE/5CF1ED54" Ref="R?"  Part="1" 
 F 0 "R?" H 6870 3446 50  0000 L CNN
 F 1 "27k" H 6870 3355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 6730 3400 50  0001 C CNN
@@ -71,11 +73,11 @@ F 3 "~" H 6800 3400 50  0001 C CNN
 $EndComp
 $Comp
 L Device:L L?
-U 1 1 5CF0A431
+U 1 1 5CF1ED55
 P 6550 2800
-AR Path="/5CF0A431" Ref="L?"  Part="1" 
-AR Path="/5CEFA277/5CF0A431" Ref="L301"  Part="1" 
-AR Path="/5CF0EAAE/5CF0A431" Ref="L?"  Part="1" 
+AR Path="/5CF1ED55" Ref="L?"  Part="1" 
+AR Path="/5CEFA277/5CF1ED55" Ref="L?"  Part="1" 
+AR Path="/5CF0EAAE/5CF1ED55" Ref="L?"  Part="1" 
 F 0 "L?" V 6740 2800 50  0000 C CNN
 F 1 "NR3010T220M" V 6649 2800 50  0000 C CNN
 F 2 "Inductor_SMD:L_Taiyo-Yuden_NR-30xx" H 6550 2800 50  0001 C CNN
@@ -88,7 +90,7 @@ L Device:C C?
 U 1 1 5CF0A438
 P 7350 3200
 AR Path="/5CF0A438" Ref="C?"  Part="1" 
-AR Path="/5CEFA277/5CF0A438" Ref="C303"  Part="1" 
+AR Path="/5CEFA277/5CF0A438" Ref="C?"  Part="1" 
 AR Path="/5CF0EAAE/5CF0A438" Ref="C?"  Part="1" 
 F 0 "C?" H 7465 3246 50  0000 L CNN
 F 1 "22u/25V" H 7465 3155 50  0000 L CNN
@@ -144,11 +146,11 @@ Wire Wire Line
 	5300 3650 6800 3650
 $Comp
 L power:GND #PWR?
-U 1 1 5CF0A458
+U 1 1 5CF1ED57
 P 5300 3750
-AR Path="/5CF0A458" Ref="#PWR?"  Part="1" 
-AR Path="/5CEFA277/5CF0A458" Ref="#PWR0302"  Part="1" 
-AR Path="/5CF0EAAE/5CF0A458" Ref="#PWR?"  Part="1" 
+AR Path="/5CF1ED57" Ref="#PWR?"  Part="1" 
+AR Path="/5CEFA277/5CF1ED57" Ref="#PWR?"  Part="1" 
+AR Path="/5CF0EAAE/5CF1ED57" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 5300 3500 50  0001 C CNN
 F 1 "GND" H 5305 3577 50  0000 C CNN
 F 2 "" H 5300 3750 50  0001 C CNN
@@ -158,11 +160,11 @@ F 3 "" H 5300 3750 50  0001 C CNN
 $EndComp
 $Comp
 L Device:C C?
-U 1 1 5CF0A45E
+U 1 1 5CF1ED58
 P 4200 3000
-AR Path="/5CF0A45E" Ref="C?"  Part="1" 
-AR Path="/5CEFA277/5CF0A45E" Ref="C301"  Part="1" 
-AR Path="/5CF0EAAE/5CF0A45E" Ref="C?"  Part="1" 
+AR Path="/5CF1ED58" Ref="C?"  Part="1" 
+AR Path="/5CEFA277/5CF1ED58" Ref="C?"  Part="1" 
+AR Path="/5CF0EAAE/5CF1ED58" Ref="C?"  Part="1" 
 F 0 "C?" H 4315 3046 50  0000 L CNN
 F 1 "10u/50V" H 4315 2955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4238 2850 50  0001 C CNN
@@ -194,11 +196,11 @@ Wire Wire Line
 Connection ~ 7350 2800
 $Comp
 L power:+3V3 #PWR?
-U 1 1 5CF0A4E3
+U 1 1 5CF1ED59
 P 7350 2700
-AR Path="/5CF0A4E3" Ref="#PWR?"  Part="1" 
-AR Path="/5CEFA277/5CF0A4E3" Ref="#PWR0303"  Part="1" 
-AR Path="/5CF0EAAE/5CF0A4E3" Ref="#PWR?"  Part="1" 
+AR Path="/5CF1ED59" Ref="#PWR?"  Part="1" 
+AR Path="/5CEFA277/5CF1ED59" Ref="#PWR?"  Part="1" 
+AR Path="/5CF0EAAE/5CF1ED59" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 7350 2550 50  0001 C CNN
 F 1 "+3V3" H 7365 2873 50  0000 C CNN
 F 2 "" H 7350 2700 50  0001 C CNN
