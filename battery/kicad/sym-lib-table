@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name project_symbols)(type Legacy)(uri ${KIPRJMOD}/project_symbols.lib)(options "")(descr ""))
+  (lib (name project-symbols)(type Legacy)(uri /home/fabian/git/handcart-motor-controller-board/KiCad-Project/project-symbols.lib)(options "")(descr ""))
+)
