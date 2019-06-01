@@ -411,17 +411,6 @@ VREF = 1.1V (two Motors)\nVREF = 0.55V (one Motor)
 Text Notes 1550 3000 2    50   ~ 0
 TCD_WOC
 $Comp
-L Connector:Conn_01x02_Male J203
-U 1 1 5CD52390
-P 7050 5300
-F 0 "J203" H 7156 5478 50  0000 C CNN
-F 1 "UPDI" H 7156 5387 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 7050 5300 50  0001 C CNN
-F 3 "~" H 7050 5300 50  0001 C CNN
-	1    7050 5300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5CD52626
 P 7350 5500
@@ -1370,4 +1359,32 @@ Wire Wire Line
 Connection ~ 6150 3100
 Wire Wire Line
 	6150 3100 6250 3100
+$Comp
+L Connector:Conn_01x03_Male J203
+U 1 1 5CF47CC6
+P 7050 5300
+F 0 "J203" H 7023 5323 50  0000 R CNN
+F 1 "UPDI" H 7023 5232 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 7050 5300 50  0001 C CNN
+F 3 "~" H 7050 5300 50  0001 C CNN
+	1    7050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CF47E69
+P 7350 5100
+AR Path="/5CF47E69" Ref="#PWR?"  Part="1" 
+AR Path="/5CEDC1EA/5CF47E69" Ref="#PWR0235"  Part="1" 
+F 0 "#PWR0235" H 7350 4950 50  0001 C CNN
+F 1 "+3V3" H 7365 5273 50  0000 C CNN
+F 2 "" H 7350 5100 50  0001 C CNN
+F 3 "" H 7350 5100 50  0001 C CNN
+	1    7350 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 5100 7350 5200
+Wire Wire Line
+	7350 5200 7250 5200
 $EndSCHEMATC
